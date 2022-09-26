@@ -12,7 +12,15 @@ heading.classList.add("mt-5");
 input.style.width = "100%";
 input.classList.add("p-3", "my-3");
 container.classList.add("container");
-button.classList.add("d-block", "mt-3", "p-2", "text-white", "bg-black");
+button.classList.add(
+  "d-block",
+  "mt-3",
+  "py-2",
+  "px-3",
+  "text-white",
+  "bg-secondary",
+  "rounded-2"
+);
 
 function randomQuoteFunc() {
   const quotes = [
