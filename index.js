@@ -1,11 +1,18 @@
 const input = document.querySelector("input");
 const button = document.querySelector("button");
-
+const container = document.querySelector("div");
+const heading = document.querySelector("h1");
 input.value = randomQuoteFunc();
 
 button.addEventListener("click", () => {
   input.value = randomQuoteFunc();
 });
+
+heading.classList.add("mt-5");
+input.style.width = "100%";
+input.classList.add("p-3", "my-3");
+container.classList.add("container");
+button.classList.add("d-block", "mt-3", "p-2", "text-white", "bg-black");
 
 function randomQuoteFunc() {
   const quotes = [
